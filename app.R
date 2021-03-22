@@ -70,7 +70,7 @@ server <- shinyServer <- function(input,output, session){
       withProgress({
         setProgress(message = "Generating Song Lyrics...")
         artistName <- input$artist
-        songName <- input$song
+        songName <- input$songName
         wc_text <- genius_lyrics(artist = artistName,song = songName )
         wc_text2 <- wc_text$lyric
         image <- input$image
