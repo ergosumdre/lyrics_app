@@ -15,7 +15,7 @@ ui <- shinyUI(
     sidebarLayout(
       sidebarPanel(
         textInput("artist", "Enter Artist Name", value = "Mac Miller"),
-        textInput("album", "Enter Album Name", value = "Swimming"),
+        textInput("songName", "Enter Song Name", value = "Woods"),
         actionButton("submit", "Get Lyrics"),
         fileInput("img", "choose an image..."),
         actionButton("submitImage", "Image outline"),
